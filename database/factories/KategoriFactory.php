@@ -2,20 +2,19 @@
 
 namespace Database\Factories;
 
-use App\Models\User;
+use App\Models\Kategori;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class UserFactory extends Factory
+class KategoriFactory extends Factory
 {
-    protected $model = User::class;
+    protected $model = Kategori::class;
 
     public function definition()
     {
         return [
-			'name' => $this->faker->name,
-			'email' => $this->faker->name,
-			'role' => $this->faker->name,
+			'nama' => $this->faker->name,
+			'warna' => $this->faker->name,
         ];
     }
 }

@@ -2,20 +2,21 @@
 
 namespace Database\Factories;
 
-use App\Models\User;
+use App\Models\Pelanggan;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class UserFactory extends Factory
+class PelangganFactory extends Factory
 {
-    protected $model = User::class;
+    protected $model = Pelanggan::class;
 
     public function definition()
     {
         return [
-			'name' => $this->faker->name,
+			'nama' => $this->faker->name,
 			'email' => $this->faker->name,
-			'role' => $this->faker->name,
+			'no_telp' => $this->faker->name,
+			'user_id' => $this->faker->name,
         ];
     }
 }
