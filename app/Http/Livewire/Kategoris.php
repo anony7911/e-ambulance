@@ -89,6 +89,7 @@ class Kategoris extends Component
             $this->dispatchBrowserEvent('closeModal');
             session()->flash('message', 'Kategori Successfully updated.');
         }
+
     }
 
     public function destroy($id)
@@ -98,6 +99,5 @@ class Kategoris extends Component
         }
 
         session()->flash('message', 'Kategori Successfully deleted.');
-
     }
 }
